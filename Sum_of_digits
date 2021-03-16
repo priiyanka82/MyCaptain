@@ -1,0 +1,22 @@
+//program to calculate the sum of all the digits in the entered number
+#include<stdio.h>
+int sum_of_digits(int);
+int main()
+{
+  int n,s;
+  printf("Enter a number :");
+  scanf("%d",&n);
+  s=sum_of_digits(n);
+  printf("\nThe sum of the digits is :%d",s);
+  return 0;
+}
+int sum_of_digits(int num)
+{
+  int n,s,copy,sum=0;
+  while (num>0)
+  {
+    sum=sum+(num%10);
+    num=num/10;
+  }
+  return sum;
+}
