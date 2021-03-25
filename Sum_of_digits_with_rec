@@ -4,10 +4,10 @@ int sum(int n);
 int main()
 {
   int n,s;
-  printf("Enter a number :");
+  printf("Input Number :");
   scanf("%d",&n);
   s=sum(n);
-  printf("\nThe sum of the digits are :%d",s);
+  printf("\nSum of Digits :%d",s);
   return 0;
 }
 int sum(int n)
